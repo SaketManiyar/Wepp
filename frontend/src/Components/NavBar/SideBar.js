@@ -1,6 +1,6 @@
 import React,{useState} from "react";
 import "bootstrap/dist/css/bootstrap.css";
-import { Offcanvas, Button } from "react-bootstrap";
+import { Offcanvas, Button, Badge, NavDropdown } from "react-bootstrap";
 
 export function SideBar() {
   const [show, setShow] = useState(false);
@@ -11,36 +11,61 @@ export function SideBar() {
   return (
     <>
       <Button
-        style={{ marginRight: 10 }}
+        style={{ marginRight: 20 }}
         variant="primary"
         onClick={handleShow}
       >
         | | |
       </Button>
 
-      <Offcanvas show={show} onHide={handleClose}>
+      <Offcanvas show={show} onHide={handleClose} style={{ width: "20rem" }}>
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+          <Offcanvas.Title>What you want...</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          <li>
-            Some text as placeholder. In real life you can have the elements you
-            have chosen. Like, text, images, lists, etc. Some text as
-            placeholder. In real life you can have the elements you have chosen.
-            Like, text, images, lists, etc.
-          </li>
-          <li>
-            Some text as placeholder. In real life you can have the elements you
-            have chosen. Like, text, images, lists, etc. Some text as
-            placeholder. In real life you can have the elements you have chosen.
-            Like, text, images, lists, etc.
-          </li>
-          <li>
-            Some text as placeholder. In real life you can have the elements you
-            have chosen. Like, text, images, lists, etc. Some text as
-            placeholder. In real life you can have the elements you have chosen.
-            Like, text, images, lists, etc.
-          </li>
+          <h4>
+            <Badge bg="secondary">New</Badge> Example heading
+          </h4>
+          <br />
+          <NavDropdown.Divider />
+          <h4>
+            <Badge bg="secondary">New</Badge> Example heading
+          </h4>
+          <br />
+          <NavDropdown.Divider />
+          <h4>
+            <Badge bg="secondary">New</Badge> Example heading
+          </h4>
+          <br />
+          <NavDropdown.Divider />
+          <h4>
+            <Badge bg="secondary">New</Badge> Example heading
+          </h4>
+          <NavDropdown.Divider />
+          <h4>
+            <Badge bg="secondary">New</Badge> Example heading
+          </h4>
+          <NavDropdown.Divider />
+          <h4>
+            <Badge bg="secondary">New</Badge> Example heading
+          </h4>
+          <NavDropdown.Divider />
+          <h4>
+            <Badge bg="secondary">New</Badge> Example heading
+          </h4>
+          <NavDropdown.Divider />
+          <h4>
+            <Badge bg="secondary">New</Badge> Example heading
+          </h4>
+          <NavDropdown.Divider />
+          <h4>
+            <Badge bg="secondary">New</Badge> Example heading
+          </h4>
+          <NavDropdown.Divider />
+          <h4>
+            <Badge bg="secondary">New</Badge> Example heading
+          </h4>
+          
         </Offcanvas.Body>
       </Offcanvas>
     </>
